@@ -1,0 +1,78 @@
+.menu {
+	
+	z-Index: 10;
+	background: #383928;
+	width: 200px;
+	position: absolute;
+	right: 0px;
+	.logo {
+		font-size: 30px; 
+		padding: 30px;
+		border-bottom: 2px dashed #ccc;
+		margin-bottom: 10px;
+	}
+}
+.menu-items {
+	margin-top: 15px;
+	li {
+		&.active a {
+			border-left: 8px solid #8BA305;
+		}
+	}
+	a {
+		line-height: 35px;
+		display: block;
+		font-weight: bold;
+		padding-left: 15px;
+		border-left: 8px solid #383928;
+		&:visited, &:link {
+			color: #fff;
+			text-decoration: none;
+		}
+		&:hover {
+			color: #383928;
+			background: #fff;
+			border-left: 8px solid #8BA305;
+		}
+	}
+}
+.menu-btm {
+	margin-left: 20px;
+	position: absolute;
+	bottom: 25px;
+}
+.overlayText {
+	z-Index: 12;
+	position: absolute;
+	bottom: 40px;
+	margin-left: 50px;
+	width: 300px;
+	text-shadow: 1px 1px 2px #555;
+	padding-top: 15px;
+	border-top: 1px solid #ccc;
+}
+.audioBtn {
+	z-index: 9;
+	position: absolute;
+	top: 20px;
+	right: 220px;
+	cursor: pointer;
+	padding: 6px 8px;
+	background: rgba(255,255,255,0.5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	&:hover, &.muted {  
+		background: rgba(255,0,42,0.5); 
+		a { background: url(../img/audio_off.png) no-repeat; }
+	}
+	&:active { background: #fff; }
+	a {
+		display: inline-block;
+		width: 20px; height: 20px;
+		background: url(../img/audio_on.png) no-repeat;
+	}
+	
+}

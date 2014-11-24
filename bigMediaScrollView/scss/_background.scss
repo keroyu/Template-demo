@@ -1,0 +1,24 @@
+body, .backgroundview, .scrollview {
+	width: 100%;
+	overflow: hidden;
+}
+.bg-item {
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	&.active { opacity: 1; }
+	.video, .image { width: 1800px; }
+	.bg2 { 
+		background: url(../img/bg2.jpg) no-repeat; 
+		background-size: 1800px auto;
+	}
+	.bg3 { 
+		background: url(../img/bg3.jpg) no-repeat; 
+		background-size: 1800px auto;
+	}
+	.bg4 { 
+		background: url(../img/bg4.jpg) no-repeat; 
+		background-size: 1800px auto;
+	}
+}
+

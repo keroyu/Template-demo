@@ -1,0 +1,160 @@
+@charest "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  color: #fff; }
+
+.menu {
+  z-Index: 10;
+  background: #383928;
+  width: 200px;
+  position: absolute;
+  right: 0px; }
+  .menu .logo {
+    font-size: 30px;
+    padding: 30px;
+    border-bottom: 2px dashed #ccc;
+    margin-bottom: 10px; }
+
+.menu-items {
+  margin-top: 15px; }
+  .menu-items li.active a {
+    border-left: 8px solid #8BA305; }
+  .menu-items a {
+    line-height: 35px;
+    display: block;
+    font-weight: bold;
+    padding-left: 15px;
+    border-left: 8px solid #383928; }
+    .menu-items a:visited, .menu-items a:link {
+      color: #fff;
+      text-decoration: none; }
+    .menu-items a:hover {
+      color: #383928;
+      background: #fff;
+      border-left: 8px solid #8BA305; }
+
+.menu-btm {
+  margin-left: 20px;
+  position: absolute;
+  bottom: 25px; }
+
+.overlayText {
+  z-Index: 12;
+  position: absolute;
+  bottom: 40px;
+  margin-left: 50px;
+  width: 300px;
+  text-shadow: 1px 1px 2px #555;
+  padding-top: 15px;
+  border-top: 1px solid #ccc; }
+
+.audioBtn {
+  z-index: 9;
+  position: absolute;
+  top: 20px;
+  right: 220px;
+  cursor: pointer;
+  padding: 6px 8px;
+  background: rgba(255, 255, 255, 0.5);
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  .audioBtn:hover, .audioBtn.muted {
+    background: rgba(255, 0, 42, 0.5); }
+    .audioBtn:hover a, .audioBtn.muted a {
+      background: url(../img/audio_off.png) no-repeat; }
+  .audioBtn:active {
+    background: #fff; }
+  .audioBtn a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/audio_on.png) no-repeat; }
+
+body, .backgroundview, .scrollview {
+  width: 100%;
+  overflow: hidden; }
+
+.bg-item {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden; }
+  .bg-item.active {
+    opacity: 1; }
+  .bg-item .video, .bg-item .image {
+    width: 1800px; }
+  .bg-item .bg2 {
+    background: url(../img/bg2.jpg) no-repeat;
+    -webkit-background-size: 1800px auto;
+    background-size: 1800px auto; }
+  .bg-item .bg3 {
+    background: url(../img/bg3.jpg) no-repeat;
+    -webkit-background-size: 1800px auto;
+    background-size: 1800px auto; }
+  .bg-item .bg4 {
+    background: url(../img/bg4.jpg) no-repeat;
+    -webkit-background-size: 1800px auto;
+    background-size: 1800px auto; }
+
+.scrollview {
+  width: 100%;
+  position: absolute;
+  top: 0px; }
+
+.scrollview-container {
+  position: relative; }
+
+.scrollview-item {
+  color: #fff;
+  text-shadow: 1px 1px 1px #555; }
+  .scrollview-item hgroup {
+    padding-top: 120px;
+    padding-left: 80px; }
+  .scrollview-item h1 {
+    font-weight: bold;
+    font-size: 50px; }
+  .scrollview-item p {
+    font-size: 25px;
+    margin-top: 20px; }
+  .scrollview-item.movie {
+    margin-left: 20px;
+    padding-right: 220px; }
+    .scrollview-item.movie iframe {
+      margin-top: 50px;
+      width: 95%;
+      height: 80%; }

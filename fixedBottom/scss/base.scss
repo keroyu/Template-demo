@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import "reset";
+
+.content {
+	z-index: 10;
+	padding: 20px;
+	background: #fff;
+	margin-bottom: 160px;
+	line-height: 150%;
+}
+
+.footer {
+	z-index: -1;
+	color: #fff;
+	padding: 30px;
+	background: #333333;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
